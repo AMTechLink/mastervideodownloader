@@ -1,18 +1,26 @@
-# mastervideodownloader
-Download any public video in your device. fast and easy with high quality
+# Master Video Downloader
 
-# 🎬 Video Downloader
+यह रिपॉज़िटरी AI-enabled वीडियो डाउनलोडर SaaS के लिए planning + implementation की foundation के रूप में तैयार की जा रही है।
 
-A simple Python video downloader using yt-dlp.
+## Current Status
+- Initial Hindi product blueprint added (MVP + Pro roadmap + Admin panel + Auth flow)
+- Next step: frontend/backend scaffold implementation
 
-## 🚀 Features
-- Download videos from YouTube and other platforms
-- Choose video quality
-- Fast and lightweight
+## Product Blueprint
+पूरा डॉक्यूमेंट यहाँ देखें:
+- `docs/website-blueprint-hi.md`
 
-## 🛠️ Installation
+## Proposed Stack
+- Frontend: Next.js + TypeScript + Tailwind
+- Backend: Node.js (NestJS/Express) + yt-dlp worker
+- DB: PostgreSQL + Prisma
+- Queue: Redis + BullMQ
+- Auth: NextAuth/Auth.js (or JWT)
+- Storage: S3-compatible storage
 
-1. Clone the repo:
-```bash
-git clone https://github.com/yourusername/video-downloader.git
-cd video-downloader
+## Roadmap (Short)
+1. Auth (Signup/Signin)
+2. Video download flow + quality selection
+3. Admin panel
+4. Pro subscriptions
+5. AI tools
